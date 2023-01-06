@@ -119,8 +119,10 @@ input:checked + .slider:before {
     padding: 65px;
     color: #fff;
 }
-
-.price {
+.priceBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 50px;
 }
 
@@ -165,5 +167,8 @@ input:checked + .slider:before {
     transform: translateY(0);
 }
 
+.hidden {
+    display: none;
+}
 
 
