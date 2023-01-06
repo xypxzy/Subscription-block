@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400&display=swap');
+body {
+    background-image: url("https://krot.info/uploads/posts/2020-10/1603671259_9-p-fon-minimalizm-dlya-prezentatsii-16.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.container {
+    height: 100vh;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*Header*/
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.pricingLongitude {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/*Create Button - toggle*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #6a46d9;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #6a46d9;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*Content */
+.content {
+    font-family: 'Rowdies', cursive;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+}
+
+.activeBlock {
+    width: 250px;
+    background-color: #fff;
+    gap: 2vw;
+    padding: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.active {
+    background-color: #815bfa;
+    padding: 65px;
+    color: #fff;
+}
+
+.price {
+    font-size: 50px;
+}
+
+.featureSubscription {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.line {
+    background-color: #f3eeee;
+    width: 300px;
+    height: 3px;
+}
+
+.moreBtn button{
+    width: 300px;
+    padding: 15px 0;
+    font-family: inherit;
+    font-size: 14px;
+    color: #fff;
+    background-color: #6a46d9;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.active .moreBtn button {
+    background-color: #fff;
+    color: #6a46d9;
+}
+
+
+.moreBtn button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.moreBtn button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+
