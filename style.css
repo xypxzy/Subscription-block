@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400&display=swap');
 body {
     background-image: url("https://krot.info/uploads/posts/2020-10/1603671259_9-p-fon-minimalizm-dlya-prezentatsii-16.jpg");
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -104,6 +104,7 @@ input:checked + .slider:before {
 }
 
 .activeBlock {
+    display: flex;
     width: 250px;
     background-color: #fff;
     gap: 2vw;
@@ -117,6 +118,7 @@ input:checked + .slider:before {
 .active {
     background-color: #815bfa;
     padding: 65px;
+    transition: .5s ease-out;
     color: #fff;
 }
 .priceBlock {
@@ -138,6 +140,9 @@ input:checked + .slider:before {
     height: 3px;
 }
 
+.moreBtn {
+    display: flex;
+}
 .moreBtn button{
     width: 300px;
     padding: 15px 0;
@@ -166,9 +171,3 @@ input:checked + .slider:before {
     box-shadow: none;
     transform: translateY(0);
 }
-
-.hidden {
-    display: none;
-}
-
-

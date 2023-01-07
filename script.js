@@ -41,11 +41,3 @@ function removeActiveClasses() {
     })
 }
 
-/*Modal Window when clicking Button Learn More*/
-
-learnMoreBtns.forEach(learnMoreBtn => {
-    learnMoreBtn.addEventListener('click', ()=>{
-
-    })
-})
-
