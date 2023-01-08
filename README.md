@@ -1,2 +1,2 @@
-# Subscription-block
+# Pricing Table
 Subscription block for site
